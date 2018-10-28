@@ -1,0 +1,76 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- 一级菜单无二级菜单
+
+    app:showAsAction
+    always:总是显示
+    ifRoom:有空间显示，无空间隐藏
+    -->
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_2"
+        android:orderInCategory="100"
+        android:title="2222"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_3"
+        android:orderInCategory="100"
+        android:title="3333"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_4"
+        android:orderInCategory="100"
+        android:title="4444"
+        app:showAsAction="ifRoom"/>
+    <!--一级菜单二级菜单同在
+
+    android:checkableBehavior
+    single 组中只有一个菜单项可以checked (radio 按钮)
+    all 组中所有菜单项可checked (checkboxes)
+    none 组中所有菜单项都不可checked
+    -->
+    <group android:checkableBehavior="all">
+        <item
+            android:id="@+id/action_5"
+            android:orderInCategory="100"
+            android:title="4444-1"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_6"
+            android:orderInCategory="100"
+            android:title="4444-2"
+            app:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_7"
+            android:orderInCategory="100"
+            android:title="4444-3"
+            app:showAsAction="ifRoom"/>
+    </group>
+
+    <!--一级菜单存在二级菜单需要激活-->
+    <item
+        android:id="@+id/action_8"
+        android:orderInCategory="100"
+        android:title="5555"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:title="5555-1"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-2"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-3"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-4"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

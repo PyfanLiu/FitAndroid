@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    值得注意的是,我们要从梯形变成矩形,
+    就是对 pathData 进行修改,
+    也就是 propertyName 要填入pathData,
+    valueType 是 pathType,
+    valueFrom是原来的路径(也就是梯形的路径),
+    最终变成的效果是valueTo(矩形的路径)。
+    这里有个要注意的地方，如果要进行path的变换，里面的点数必须要一样！
+
+     _____________________________
+    |.(0,0)                      |.(180,0)
+    |                            |
+    |                            |
+    |____________________________|
+    |.(0,75)  新位置              |.(180,75)
+    |                            |
+    |                            |
+    |                            |
+    |                            |
+    |                            |.(180,230)
+    |                           /
+    |                    /
+    |              /
+    |      /
+    |/
+    .(0,320)
+
+    M 180,230 L 0,320 0,0 180,0 z
+    变换成
+    M 180,75 L 0 ,75 0 ,0 180,0 z
+    -->
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+                android:duration="500"
+                android:interpolator="@android:interpolator/decelerate_cubic"
+                android:propertyName="pathData"
+                android:valueType="pathType"
+                android:valueFrom="M 180,230 L 0,320 0,0 180,0 z"
+                android:valueTo=  "M 180,75 L 0,75 0,0 180,0 z" />

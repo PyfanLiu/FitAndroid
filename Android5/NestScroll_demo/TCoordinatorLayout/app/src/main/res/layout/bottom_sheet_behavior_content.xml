@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+随意一个ViewGroup
+需实现 BottomSheetBehavior
+app:layout_behavior="@string/bottom_sheet_behavior"
+app:behavior_peekHeight="0dp" 为隐藏的高度
+app:behavior_hideable="true" 可隐藏
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0ff"
+
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="100dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+
+    tools:context="com.wjz.tcoordinatorlayout.BottomSheetBehaviorActivity"
+    tools:showIn="@layout/bottom_sheet_behavior_activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是底部弹框"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

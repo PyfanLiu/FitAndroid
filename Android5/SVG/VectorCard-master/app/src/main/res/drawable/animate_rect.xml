@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/sharp_rect">
+    <!--
+        target里是需要动画的对象，
+        这里我们的对象就是前面那个叫sharp_rect的梯形,
+        所以name里填上它,
+        然后animation填的是对应的动画文件
+    -->
+    <target
+        android:name="sharp_rect"
+        android:animation="@animator/to_rect" />
+</animated-vector>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="180dp"
+        android:height="320dp"
+        android:viewportWidth="180"
+        android:viewportHeight="400">
+
+    <!--
+        我们把 path 加了一个 name=”sharp_rect”,
+        这里做 动画效果 是要指定这部分,
+        所以 需要 给个 独一无二 的name作为id.
+    -->
+    <path
+        android:name="sharp_rect"
+        android:fillColor="#e6ffffff"
+        android:pathData="M 180,230 L 0,320 0,0 180,0 z" />
+</vector>

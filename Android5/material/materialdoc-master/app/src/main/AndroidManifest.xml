@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.materialdoc">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.MaterialDoc">
+        <activity
+            android:name=".ui.activity.home.HomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.activity.RaisedButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.FlatButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.CircularProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.LinearProgressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.RadioButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.CheckBoxActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.SwitchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputSingleLineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputMultiLineActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputFullWidthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputFloatingLabelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.input.InputErrorLabelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.tab.TabActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabIconActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabMultiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs" />
+
+        <activity
+            android:name=".ui.activity.tab.TabStyledActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc.Tabs.Styled" />
+
+        <activity
+            android:name=".ui.activity.RatingBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.AlertDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.CardViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.ConfirmationDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.SnackBarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.ToastActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.DefaultToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen" />
+
+        <activity
+            android:name=".ui.activity.StyledToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.IconsToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.BackToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.BlankToolbarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen.Petrol" />
+
+        <activity
+            android:name=".ui.activity.FloatingButtonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.MenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+            android:name=".ui.activity.StyledMenuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FullScreen"/>
+
+        <activity
+                android:name=".ui.activity.DatePickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.MaterialDoc"/>
+
+        <activity
+                android:name=".ui.activity.TimePickerActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.MaterialDoc" />
+
+        <activity
+                android:name=".ui.activity.SwipeToRefreshActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.MaterialDoc" />
+
+    </application>
+
+</manifest>

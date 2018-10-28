@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:drawable="@drawable/bluetooth" >
+
+    <!-- 对圆环做属性动画-->
+    <!-- 整个 group 旋转缩放-->
+    <target
+        android:name="circleGroup"
+        android:animation="@animator/bluetooth_cicrle_expand" />
+
+    <!-- path 位移 透明-->
+    <target
+        android:name="circlePath"
+        android:animation="@animator/bluetooth_circle_path" />
+</animated-vector>

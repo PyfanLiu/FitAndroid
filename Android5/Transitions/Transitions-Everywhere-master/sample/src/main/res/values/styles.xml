@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorControlHighlight">@color/primary</item>
+        <item name="colorButtonNormal">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.White">
+        <!-- 按钮点击后，反馈的颜色-->
+        <item name="colorControlHighlight">#0ff</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+
+</resources>

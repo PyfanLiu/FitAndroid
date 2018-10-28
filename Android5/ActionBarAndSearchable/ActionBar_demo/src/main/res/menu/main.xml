@@ -1,0 +1,69 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:wjz="http://schemas.android.com/apk/res-auto">
+    <!-- 一级菜单无二级菜单-->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_action_search"
+        android:orderInCategory="100"
+        android:title="search"
+        wjz:actionViewClass="android.support.v7.widget.SearchView"
+        wjz:showAsAction="always"/>
+    <item
+        android:id="@+id/action_2"
+        android:orderInCategory="100"
+        android:title="2222"
+        wjz:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_3"
+        android:orderInCategory="100"
+        android:title="3333"
+        wjz:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_4"
+        android:orderInCategory="100"
+        android:title="4444"
+        wjz:showAsAction="ifRoom"/>
+    <!--一级菜单二级菜单同在-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_5"
+            android:orderInCategory="100"
+            android:title="4444-1"
+            wjz:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_6"
+            android:orderInCategory="100"
+            android:title="4444-2"
+            wjz:showAsAction="ifRoom"/>
+        <item
+            android:id="@+id/action_7"
+            android:orderInCategory="100"
+            android:title="4444-3"
+            wjz:showAsAction="ifRoom"/>
+    </group>
+    -->
+
+    <!--一级菜单存在二级菜单需要激活-->
+    <item
+        android:id="@+id/action_8"
+        android:orderInCategory="100"
+        android:title="5555"
+        wjz:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:title="5555-1"
+                wjz:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-2"
+                wjz:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-3"
+                wjz:showAsAction="ifRoom"/>
+            <item
+                android:title="5555-4"
+                wjz:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+
+
+</menu>
